@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}         
+
+header,
+section h2,
+section h3,
+form button {
+    font-family: 'Bungee', cursive;
+    font-weight: normal;
+}
+
+body,
+input,
+textarea{
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    padding: 16px 0;
+    background-color: #182061;
+    color: #ecf0f1;
+}
+
+header nav li {
+    display: inline;  /*deixar alinhado*/
+    margin-left: 16px;  /*espaco entre "sobre a loja" e "contato"*/
+    font-size: 18px;
+}
+
+header nav li a {             /*sobre a loja e contato*/
+    color: #ecf0f1; 
+    text-decoration: none;      /* removendo o ___ debaixo "sobre a loja" e "contato" */
+}
+
+.container {           
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container{  
+    display: flex;
+    align-items: center;   /*deixar "sobre a loja" e "contato" no meio da linha*/
+    justify-content: space-between;  /* colocando na ponta direita */
+}
+
+section .container {  /* conteudo do texto sobre a loja */
+    display: flex;
+    align-items: flex-start 
+}
+
+.brands-list img {    /* tamanho dos logos */
+    height: 24px;
+}
+
+.brands-list li {   /* deixando uma imagem ao lado da outra */
+    display: inline;
+    margin-right: 8px;
+}
+
+section {
+    padding: 24px 0;
+    color: #182061;
+}
+
+section h2 {   /* espaco entre o titulo "sobre a loja" e o texto */
+    margin-bottom: 16px;
+}
+
+section p {   /* espaco entre o texto e os logos das marcas */
+    margin-bottom: 12px;
+}
+
+section img {  /* espaco entre a imagem e o texto na lateral direita */
+    margin-right: 32px;
+}
+
+.social-links img {
+    height: 24px;
+}
+
+.social-links li {
+    display: inline;
+    margin-right: 8px;
+}
+
+.social-links li a {
+    text-decoration: none;
+}
+
+#contact .container {
+    display: block;
+}
+.contact-methods {
+    display: flex;
+    justify-content: space-between;
+}
+
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+form textarea {  /*desabilita a funcao do usuario aumentar a caixa de texto */
+    resize: none;
+    height: 140px;
+}
+
+section h3 {
+    margin-bottom: 16px;
+}
+
+form button {
+    background-color: #182061;
+    color: #fff;
+    border: none;  /* tiranto a borda do botao*/
+    cursor: pointer; /* mudando a seta do mouse quando passa no botao */
+}
+
+form button:hover {
+    background-color: #314e9e;
+}
+
+input:focus, textarea:focus {
+    outline-color: #182061;
+}
+
+footer {
+    background-color: #182061;
+    color: #ecf0f1;
+    padding: 16px 0;
+}
